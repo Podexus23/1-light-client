@@ -29,7 +29,7 @@ dbSendBtn.addEventListener("click", async (e) => {
 });
 
 setInterval(async () => {
-  const res = await fetch(`${url}/api/light/send`);
+  const res = await fetch(`${url}/api/light`);
   const data = await res.json();
   p2.innerHTML = JSON.stringify(data);
 }, 30000);
